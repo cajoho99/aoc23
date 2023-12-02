@@ -28,7 +28,7 @@ tasks.withType<Jar> {
     duplicatesStrategy = DuplicatesStrategy.WARN
 
     manifest {
-        attributes["Main-Class"] = "AocTemplateKt"
+        attributes["Main-Class"] = "Day01"
     }
     configurations["compileClasspath"].forEach { file: File ->
         from(zipTree(file.absoluteFile))
@@ -36,5 +36,5 @@ tasks.withType<Jar> {
 }
 
 application {
-    mainClass.set("Day01.kt")
+    mainClass.set("Day01")
 }
